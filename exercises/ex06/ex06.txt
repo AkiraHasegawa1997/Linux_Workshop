@@ -26,7 +26,7 @@
 
 [92m‣ wget[0m
 インターネット上のコンテンツをダウンロードするときに使います．
-[92m‣ wget URL[0mという形式で実行します．
+[96mwget URL[0mという形式で実行します．
 使用例 : http://www.hogefuga.com/example.pdfを保存
 	[96m$ wget http://www.hogefuga.com/example.pdf[0m
 

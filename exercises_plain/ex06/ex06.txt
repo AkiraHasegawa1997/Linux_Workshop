@@ -26,7 +26,7 @@ grepコマンドを使って正規表現に合致した部分のみを取り出�
 
 ‣ wget
 インターネット上のコンテンツをダウンロードするときに使います．
-‣ wget URLという形式で実行します．
+wget URLという形式で実行します．
 使用例 : http://www.hogefuga.com/example.pdfを保存
 	$ wget http://www.hogefuga.com/example.pdf
 
