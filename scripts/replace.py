@@ -4,12 +4,12 @@ import sys
 def replaceColored(str):
   return str.replace("<%","[33m").replace("%>","[0m").replace("<$","[92m‣ ")\
       .replace("$>","[0m").replace("<#","[35m").replace("#>","[0m")\
-      .replace("<+","[96m").replace("+>","[0m")\
+      .replace("<+","[96m ").replace("+>"," [0m")\
       .replace("===","━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
 
 def replacePlain(str):
   return str.replace("<%","").replace("%>","").replace("<$","‣ ").replace("$>","")\
-      .replace("<#","").replace("#>","").replace("<+","").replace("+>","")\
+      .replace("<#","").replace("#>","").replace("<+"," ").replace("+>"," ")\
       .replace("===","━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
 
 def err():

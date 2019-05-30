@@ -5,37 +5,37 @@
 文字列を記号で表現する方法があります．
 ここでは実践演習で使う表現のみを例として挙げます．
 使用例1 : a, b, cの3つで構成される文字列 (e.g. aabbcabc)
-	[96m[abc]+[0m 
+	[96m [abc]+ [0m 
 
 使用例2 : a, b, cの3つ以外で構成される文字列 (e.g. fgihk)
-	[96m[^abc]+[0m
+	[96m [^abc]+ [0m
 
 使用例3 : aからzまでの文字で構成される文字列 (e.g. acbfdge)
-	[96m[a-z][0m
+	[96m [a-z] [0m
 
 使用例4 : abc か def
-	[96m(abc|def)[0m
+	[96m (abc|def) [0m
 
 使用例5 : abc のみ
-	[96mabc[0m
+	[96m abc [0m
 
 [92m‣ grep -Eo[0m
-[96mgrep[0mコマンドを使って正規表現に合致した部分のみを取り出すことが出来ます．
+[96m grep [0mコマンドを使って正規表現に合致した部分のみを取り出すことが出来ます．
 使用例 : pdfのみ出力
-	[96mecho "a.pdf b.mp3 c.jpg d.pdf" | grep -Eo "[a-z]+.pdf"
+	[96m echo "a.pdf b.mp3 c.jpg d.pdf" | grep -Eo "[a-z]+.pdf"
 
 [92m‣ wget[0m
 インターネット上のコンテンツをダウンロードするときに使います．
-[96mwget URL[0mという形式で実行します．
+[96m wget URL [0mという形式で実行します．
 使用例 : http://www.hogefuga.com/example.pdfを保存
-	[96m$ wget http://www.hogefuga.com/example.pdf[0m
+	[96m $ wget http://www.hogefuga.com/example.pdf [0m
 
 [35m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
 	[35m実践演習発展[0m
 [35m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
-1. [96mXML=$(curl http://www.nhk.or.jp/r-news/podcast/nhkradionews.xml 2>/dev/null)[0mを実行し，
-　変数[96mXML[0mの中身が何であるかを確かめましょう．
+1. [96m XML=$(curl http://www.nhk.or.jp/r-news/podcast/nhkradionews.xml 2>/dev/null) [0mを実行し，
+　変数[96m XML [0mの中身が何であるかを確かめましょう．
 
-2. 変数[96mXML[0mから[96mmp3[0mを自動で保存してみましょう．
-  HINT: 正規表現と[96mgrep[0mを使ってURLを抜き出して[96mwget[0mコマンドで保存しましょう．
+2. 変数[96m XML [0mから[96m mp3 [0mを自動で保存してみましょう．
+  HINT: 正規表現と[96m grep [0mを使ってURLを抜き出して[96m wget [0mコマンドで保存しましょう．
 
